@@ -1,0 +1,510 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.centrarMenu{
+    
+    display:inline;
+    color: #525151;
+    font-weight:bold;
+    text-align: center;
+}
+
+nav{
+    background-color: rgb(233, 225, 241);
+    font-size: 25px;
+    height: 40px;
+    line-height: 2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav a{
+    padding-right: 10px;
+}
+  
+.logoHeader{
+    width: 10%;
+    padding-bottom: 15px;
+    display: block;
+    margin: auto;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+
+/*estilosGeneralesTodasLasPaginas*/
+
+body{
+    font-family: 'Radley', serif;
+    font-size:medium;  
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+h1{
+    color: #525151;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+}
+
+h2{
+    color: #525151;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+}
+
+h3{
+    color: #525151;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+}
+
+p{
+    color: #414040;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+
+/*contenidoPagina1*/
+
+.centrarImagen{
+    text-align: center;
+    display: block;
+}
+
+#imagenDeInicio{
+    width: 80%;
+}
+
+.flexSection{
+    display: flex;
+    justify-content: space-around;  
+}
+
+#quienesSomos{
+   padding: 20px;
+   text-align: justify;
+}
+
+#queHacemos{
+    padding: 20px;
+    text-align: justify;
+} 
+
+.parallax2{
+    width: 100%;
+    height: 800px;
+    background-image: url(imagenes/parallax2.jpg);
+    margin-top: 50px;
+    clear: both;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+}
+
+
+/*pagina2BeneficiosDeLaAdopcion*/
+
+.centrarVideo{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.testimoniosCentrado{
+    text-align: center;
+}
+
+.gridBeneficios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 25px;
+    text-align: justify;
+}
+
+.tamanoImagenTestimonios{
+    width: 100%;
+    height: 500px;
+}
+
+.listaCircle{
+    list-style-type:circle;
+    line-height: 1.6;
+    padding-left: 1%;
+    font-size: 18px;
+    color: #414040;
+}
+
+.italica{
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+    color: #525151;
+}
+
+.centrarImagenNena{
+    text-align: center;
+}
+
+/*pagina3BienestarAnimal*/
+
+#pagina3{
+    background-color: white;
+}
+
+#titulopagina3{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 200%;
+}
+
+#imagenconsejos{
+    width: 100%;
+    height: 100%px;
+}
+
+#imagenjuegos{
+    width: 100%;
+    height: 100%px;
+}
+
+#imagennutricion{
+    width: 100%;
+    height: 100%px;    
+}
+
+.colorVerde{
+    background-color: rgb(138, 245, 138);
+}
+
+.colorRosa{
+    background-color: rgb(238, 180, 190);
+}
+
+.colorCeleste{
+    background-color: rgb(92, 203, 236);
+}
+    
+
+.gridBienestar{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 0.5%;
+}
+
+.gridBienestar h2{
+    font-size: 100%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.gridBienestar li{
+    font-size: 100%;
+    margin-top: 5%;
+    text-decoration: underline;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.gridBienestar p{
+    font-size: 90%;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+/*footer*/
+
+footer{
+    padding-top: 15px;
+    background-color: #161616; 
+    border-top: 2px solid #8a8383;
+    width: 100%;
+    height: 150px;
+    color:  whitesmoke;
+    font-weight: bold;
+}
+  
+.logoPequeño{
+    width: 7%;
+    padding-left: 1%;
+    padding-top: 5px;
+    text-align: left;
+}
+  
+.redesSociales{
+    line-height: 2;
+    font-size: large;
+    float: right;
+    padding-right: 2%;
+    width: 200px;
+    height: 50px;
+    display: inline;
+    color: whitesmoke;
+}
+  
+footer a:hover{
+    text-decoration: underline;
+}
+
+.colorLetraBlanca{
+    color: whitesmoke;
+}
+  
+.imagenesRedes{
+    width: 20%;
+    height: 60%;
+    float: right;
+    line-height: 2;
+}
+  
+.infoDeContacto{
+    line-height: 2;
+    font-size: large;
+    float: right;
+    padding-right: 25%;
+    width: 400px;
+    height: 50px;
+    display: inline;
+    text-align: left;
+}
+
+
+@media (min-width: 425px){
+    nav.navega a{
+        padding-left: 5%;
+        display: block;
+        font-size: 15px;
+        line-height: 20px;
+        background-color: rgb(233, 225, 241); 
+    }
+
+    .logoHeader{
+        width: 28%;
+        padding-bottom: 1px;
+    }
+
+    .centrarImagen{
+        padding-top: 80px;
+    }
+    
+    .parallax2{
+        width: 100%;
+    }
+
+    .flexSection{
+        display: inline-block;
+    }
+
+    .centrarVideo{
+        margin-top: 40px;
+        padding-right: 10%;
+    }
+
+    .gridBeneficios{
+        display: block;
+    }
+    
+    .tamanoImagenTestimonios{
+        width: 100%;
+        height: 280px;
+    }
+    
+    .centrarVideo{
+        padding-top: 40px;
+    }
+    
+    
+    .logoHeader{
+        width: 25%;
+    }
+    
+    p{ 
+        padding-right: 3%;
+        line-height: 1.5;
+        font-size: 15px;
+    }
+    
+    .listaCircle{
+        line-height: 1.5;
+        padding-left: 4%;
+        padding-right: 3%;
+        font-size: 15px;
+    }
+
+
+    footer{
+        width: 100%;
+        height: 200px;   
+    }
+    
+    
+    .logoPequeño{
+        width: 15%;
+        padding-top: 2px;
+        float: left;  
+    }
+    
+    .infoDeContacto{
+        padding-left: 5px;
+        float: left;  
+    }
+
+    body{
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 768px){
+    nav.navega a{
+        display: block;
+        font-size: 15px;
+        line-height: 20px;
+        background-color: rgb(233, 225, 241); 
+        padding-left: 3%;
+    }
+    
+    .logoHeader{
+        width: 25%;
+        padding-bottom: 1px;
+    }
+
+    .centrarImagen{
+        padding-top: 80px;
+    }
+      
+    .flexSection{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2%;
+    }
+
+    .centrarVideo{
+        padding-top: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .gridBeneficios{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 25px;
+        text-align: justify;
+        padding-right: 2%;
+    }
+
+    p{
+        line-height: 1.5;
+        font-size: 15px;
+        padding-right: 2%;
+    }
+    
+    .listaCircle{
+        line-height: 1.5;
+        padding-left: 2%;
+        font-size: 15px;
+    }
+    
+
+    .infoDeContacto{
+        padding-right: 20%;
+        padding-left: 10%;         
+        width: 200px;    
+    }
+
+    .gridFooter{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 25px;
+        text-align: justify;
+    }
+
+    .logoPequeño{
+        width: 70%;
+        padding-top: 2px;
+        float: left;  
+    }
+
+
+    .gridBienestar{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2%;
+        grid-template-rows: none;   
+    }
+
+    .gridBienestar li{
+        margin-left: 10%;
+    }
+
+}
+
+@media (min-width:1024px){
+    nav.navega a{
+        display: inline;
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .logoHeader{
+        width: 20%;
+        padding-bottom: 1px;
+    }
+
+    .tamanoImagenTestimonios{
+        width: 100%;
+        height: 380px;
+    }
+
+    .logoPequeño{
+        width: 40%;
+        padding-top: 2px;
+        float: left;  
+    }
+
+
+    #navegacion a{
+        display: inline;
+        padding-right: 2%;
+        font-size: 130%;
+    
+    }
+
+    #nombre-proyecto{
+        font-size: 150%;
+        
+    }
+
+    .gridBienestar{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2%;
+        grid-template-rows: none;
+       
+    }
+
+    .gridBienestar li{
+        margin-left: 10%;
+    }
+
+    .gridBienestar h2{
+        font-size: 120%;
+        margin-top: 5%;
+        text-align: center;
+        
+    }
+
+    #titulopagina2{
+        font-size: 200%;
+    }
+
+}
