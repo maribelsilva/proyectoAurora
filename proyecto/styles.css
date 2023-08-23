@@ -3,12 +3,11 @@
     padding: 0;
 }
 
-.centrarMenu{
-    
+header{
+    text-align: center;
     display:inline;
     color: #525151;
     font-weight:bold;
-    text-align: center;
 }
 
 nav{
@@ -19,16 +18,9 @@ nav{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
-nav a{
-    padding-right: 10px;
-}
   
-.logoHeader{
-    width: 10%;
-    padding-bottom: 15px;
-    display: block;
-    margin: auto;
+#centrarLogo{
+    text-align: center;
 }
 
 nav a:hover{
@@ -107,12 +99,24 @@ p{
     background-position: center top;
 }
 
+#podesEncontrarnosEn{
+    text-align: center;
+}
 
-/*pagina2BeneficiosDeLaAdopcion*/
 
+/*pagina2BeneficiosDeLaAdopcion*/  
 .centrarVideo{
     text-align: center;
     margin-top: 30px;
+    display: grid;
+    place-content: center;  
+}
+
+.center{
+    text-align: center;
+    margin-top: 30px;
+    display: grid;
+    place-content: center;  
 }
 
 .testimoniosCentrado{
@@ -220,6 +224,324 @@ a{
     margin-right: 5%;
 }
 
+/*pagina4informacionLegal*/
+.titlegales {
+    color: aliceblue;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    background-color: #5accc6;
+}
+
+.plegal {
+    margin-top: 0%;
+    text-align: justify;
+    color: #414040;
+    line-height: 1.6;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.legal{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.in-flex{
+    flex: 1;
+    min-width: 250px;
+    padding: 25px;
+    background-color: #fff;
+    margin: 20px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+}
+
+.in-flex:first-child{
+    flex: 1;
+    padding: 25px;
+    background-color: #fff;
+    margin: 20px;
+    margin-bottom: 0px;
+    
+}
+
+.in-flex div{
+    padding: 25px;
+    background-color: #fff;
+    margin:20px;
+    flex: 1;
+    box-sizing: border-box;
+
+}
+.legalesTit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.in-flex .imglegales {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.cajalegal {
+    width: 90%; /*ancho del elemento*/
+    border-radius: 10px; /* Bordes redondeados del div */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra del div */
+    flex: 1;  /* Ajusta el tamaño de las columnas de manera equitativa */
+    border: 5px solid #5accc6;
+    margin: 5px; /* Separación entre las columnas */
+} 
+
+.titcajitalegal {
+    margin-top: 0%;
+    color: #f4f7f9;
+    font-family: 'Lato', sans-serif;
+    background-color: #5accc6;
+}
+
+
+.cajaMedioLegal{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+
+.cajalegal{
+    flex: 1;
+    max-width: 500px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.botonLegal{
+    background-color: #3c434b;
+    color:#fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    justify-content: center; 
+}
+
+.titcajitalegal{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.plegal{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Estilos para el botón */
+.botonLegal {
+    background-color: #3c434b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.titcajitalegal {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.plegal {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.cajaAbajoLegal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilos para cada cajalegal */
+.cajalegal {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.lilegal {
+    font-size: 16px;
+    line-height: 1.4;
+    list-style:inside;
+}
+
+/* Estilos para el cuadro resaltado */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cuadroResaltado {
+    background-color: #3c434b;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 40%;
+}
+
+
+/*FORMULARIO*/
+
+.formulario {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 .formLegal {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/*  etiquetas y campos de entrada */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/*  botón de enviar */
+input[type="submit"] {
+    background-color: #3c434b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #005ba8;
+}
+
+/* formulario responsive */
+/*@media screen and (max-width: 600px) {
+    .formulario {
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        font-size: 16px;
+        padding: 8px 16px;
+    }*/
+}
+
+#titulosRefugios{
+    text-align: center;
+}
+
+#titulosH2{
+    text-align: center;
+}
+
+iframe{
+    text-align: center;
+}
+
+.mapa iframe{
+    width: 95%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+
+.pInfo{
+    text-align: center;
+}
+
+.h2donacion{
+    text-align: left;
+}
+
+.pdonaciones{
+    text-align: left;
+}
+
+@media (min-width: 768px){
+    #refugios{
+       display: flex;
+       flex-wrap: wrap;
+       }
+
+       .informacionRefugios{
+        flex-basis: 50%;
+        margin-top: 6%;
+        margin-bottom: 12%;
+       }
+
+       .mapa{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+        .pdonaciones{
+            text-align: left;
+        }
+
+}
+
+
+
+@media (min-width: 1024px){
+    #refugios{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center; 
+    }
+    .mapa{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
 
 /*footer*/
 
@@ -227,7 +549,7 @@ footer{
     padding-top: 15px;
     background-color: #161616; 
     border-top: 2px solid #8a8383;
-    width: 100%;
+    width: 99%;
     height: 150px;
     color:  whitesmoke;
     font-weight: bold;
@@ -280,7 +602,6 @@ footer a:hover{
 
 @media (min-width: 425px){
     nav.navega a{
-        padding-left: 5%;
         display: block;
         font-size: 15px;
         line-height: 20px;
@@ -304,11 +625,6 @@ footer a:hover{
         display: inline-block;
     }
 
-    .centrarVideo{
-        margin-top: 40px;
-        padding-right: 10%;
-    }
-
     .gridBeneficios{
         display: block;
     }
@@ -317,9 +633,19 @@ footer a:hover{
         width: 100%;
         height: 280px;
     }
+
+    #ajusteVideo{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        }
+    
     
     .centrarVideo{
         padding-top: 40px;
+        width: 99%;
+        display: grid;
+        justify-content: center;
     }
     
     
@@ -342,7 +668,7 @@ footer a:hover{
 
 
     footer{
-        width: 100%;
+        width: 99%;
         height: 200px;   
     }
     
@@ -358,21 +684,13 @@ footer a:hover{
         float: left;  
     }
 
-    body{
+    .footerBienestar{
         width: 100%;
     }
 }
 
 
-@media (min-width: 768px){
-    nav.navega a{
-        display: block;
-        font-size: 15px;
-        line-height: 20px;
-        background-color: rgb(233, 225, 241); 
-        padding-left: 3%;
-    }
-    
+@media (min-width: 768px){  
     .logoHeader{
         width: 25%;
         padding-bottom: 1px;
@@ -414,6 +732,10 @@ footer a:hover{
         font-size: 15px;
     }
     
+    .tamanoImagenTestimonios{
+        width: 100%;
+        height: 200px;
+    }
 
     .infoDeContacto{
         padding-right: 20%;
@@ -426,6 +748,10 @@ footer a:hover{
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 25px;
         text-align: justify;
+    }
+
+    footer{
+        width: 99%;
     }
 
     .logoPequeño{
@@ -445,7 +771,6 @@ footer a:hover{
     .gridBienestar li{
         margin-left: 10%;
     }
-
 }
 
 @media (min-width:1024px){
@@ -461,8 +786,8 @@ footer a:hover{
     }
 
     .tamanoImagenTestimonios{
-        width: 100%;
-        height: 380px;
+        width: 99%;
+        height: 320px;
     }
 
     .logoPequeño{
@@ -470,8 +795,7 @@ footer a:hover{
         padding-top: 2px;
         float: left;  
     }
-
-
+    
     #navegacion a{
         display: inline;
         padding-right: 2%;
@@ -482,6 +806,10 @@ footer a:hover{
     #nombre-proyecto{
         font-size: 150%;
         
+    }
+
+    #titulopagina2{
+        font-size: 200%;
     }
 
     .gridBienestar{
@@ -502,9 +830,4 @@ footer a:hover{
         text-align: center;
         
     }
-
-    #titulopagina2{
-        font-size: 200%;
-    }
-
 }
