@@ -463,7 +463,7 @@ input[type="submit"]:hover {
 }
 
 /* formulario responsive */
-/*@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .formulario {
         padding: 10px;
     }
@@ -471,76 +471,13 @@ input[type="submit"]:hover {
     input[type="submit"] {
         font-size: 16px;
         padding: 8px 16px;
-    }*/
-}
-
-#titulosRefugios{
-    text-align: center;
-}
-
-#titulosH2{
-    text-align: center;
-}
-
-iframe{
-    text-align: center;
-}
-
-.mapa iframe{
-    width: 95%;
-    height: 100%;
-    object-fit: contain;
-    
-}
-
-.pInfo{
-    text-align: center;
-}
-
-.h2donacion{
-    text-align: left;
-}
-
-.pdonaciones{
-    text-align: left;
-}
-
-@media (min-width: 768px){
-    #refugios{
-       display: flex;
-       flex-wrap: wrap;
-       }
-
-       .informacionRefugios{
-        flex-basis: 50%;
-        margin-top: 6%;
-        margin-bottom: 12%;
-       }
-
-       .mapa{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
     }
-        .pdonaciones{
-            text-align: left;
-        }
-
 }
 
+/*pagina5refugios*/
 
 
-@media (min-width: 1024px){
-    #refugios{
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center; 
-    }
-    .mapa{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
+
 
 
 /*footer*/
