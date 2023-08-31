@@ -1,0 +1,772 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    text-align: center;
+    display:inline;
+    color: #525151;
+    font-weight:bold;
+}
+
+nav{
+    background-color: rgb(233, 225, 241);
+    font-size: 25px;
+    height: 40px;
+    line-height: 2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+  
+#centrarLogo{
+    text-align: center;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+
+/*estilosGeneralesTodasLasPaginas*/
+
+body{
+    font-family: 'Radley', serif;
+    font-size:medium;  
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+h1{
+    color: #525151;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+}
+
+h2{
+    color: #525151;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+}
+
+h3{
+    color: #525151;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+}
+
+p{
+    color: #414040;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+
+/*contenidoPagina1*/
+
+.centrarImagen{
+    text-align: center;
+    display: block;
+}
+
+#imagenDeInicio{
+    width: 80%;
+}
+
+.flexSection{
+    display: flex;
+    justify-content: space-around;  
+}
+
+#quienesSomos{
+   padding: 20px;
+   text-align: justify;
+}
+
+#queHacemos{
+    padding: 20px;
+    text-align: justify;
+} 
+
+.parallax2{
+    width: 100%;
+    height: 800px;
+    background-image: url(imagenes/parallax2.jpg);
+    margin-top: 50px;
+    clear: both;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+}
+
+#podesEncontrarnosEn{
+    text-align: center;
+}
+
+
+/*pagina2BeneficiosDeLaAdopcion*/  
+.centrarVideo{
+    text-align: center;
+    margin-top: 30px;
+    display: grid;
+    place-content: center;  
+}
+
+.center{
+    text-align: center;
+    margin-top: 30px;
+    display: grid;
+    place-content: center;  
+}
+
+.testimoniosCentrado{
+    text-align: center;
+}
+
+.gridBeneficios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 25px;
+    text-align: justify;
+}
+
+.tamanoImagenTestimonios{
+    width: 100%;
+    height: 500px;
+}
+
+.listaCircle{
+    list-style-type:circle;
+    line-height: 1.6;
+    padding-left: 1%;
+    font-size: 18px;
+    color: #414040;
+}
+
+.italica{
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+    color: #525151;
+}
+
+.centrarImagenNena{
+    text-align: center;
+}
+
+/*pagina3BienestarAnimal*/
+
+#pagina3{
+    background-color: white;
+}
+
+#titulopagina3{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 200%;
+}
+
+#imagenconsejos{
+    width: 100%;
+    height: 100%px;
+}
+
+#imagenjuegos{
+    width: 100%;
+    height: 100%px;
+}
+
+#imagennutricion{
+    width: 100%;
+    height: 100%px;    
+}
+
+.colorVerde{
+    background-color: rgb(138, 245, 138);
+}
+
+.colorRosa{
+    background-color: rgb(238, 180, 190);
+}
+
+.colorCeleste{
+    background-color: rgb(92, 203, 236);
+}
+    
+
+.gridBienestar{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 0.5%;
+}
+
+.gridBienestar h2{
+    font-size: 100%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.gridBienestar li{
+    font-size: 100%;
+    margin-top: 5%;
+    text-decoration: underline;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.gridBienestar p{
+    font-size: 90%;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*pagina4informacionLegal*/
+.titlegales {
+    color: aliceblue;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    background-color: #5accc6;
+}
+
+.plegal {
+    margin-top: 0%;
+    text-align: justify;
+    color: #414040;
+    line-height: 1.6;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.legal{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.in-flex{
+    flex: 1;
+    min-width: 250px;
+    padding: 25px;
+    background-color: #fff;
+    margin: 20px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+}
+
+.in-flex:first-child{
+    flex: 1;
+    padding: 25px;
+    background-color: #fff;
+    margin: 20px;
+    margin-bottom: 0px;
+    
+}
+
+.in-flex div{
+    padding: 25px;
+    background-color: #fff;
+    margin:20px;
+    flex: 1;
+    box-sizing: border-box;
+
+}
+.legalesTit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.in-flex .imglegales {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.cajalegal {
+    width: 90%; /*ancho del elemento*/
+    border-radius: 10px; /* Bordes redondeados del div */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra del div */
+    flex: 1;  /* Ajusta el tamaño de las columnas de manera equitativa */
+    border: 5px solid #5accc6;
+    margin: 5px; /* Separación entre las columnas */
+} 
+
+.titcajitalegal {
+    margin-top: 0%;
+    color: #f4f7f9;
+    font-family: 'Lato', sans-serif;
+    background-color: #5accc6;
+}
+
+
+.cajaMedioLegal{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+
+.cajalegal{
+    flex: 1;
+    max-width: 500px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.botonLegal{
+    background-color: #3c434b;
+    color:#fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    justify-content: center; 
+}
+
+.titcajitalegal{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.plegal{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Estilos para el botón */
+.botonLegal {
+    background-color: #3c434b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.titcajitalegal {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.plegal {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.cajaAbajoLegal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilos para cada cajalegal */
+.cajalegal {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.lilegal {
+    font-size: 16px;
+    line-height: 1.4;
+    list-style:inside;
+}
+
+/* Estilos para el cuadro resaltado */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cuadroResaltado {
+    background-color: #3c434b;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 40%;
+}
+
+
+/*FORMULARIO*/
+
+.formulario {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 .formLegal {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/*  etiquetas y campos de entrada */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/*  botón de enviar */
+input[type="submit"] {
+    background-color: #3c434b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #005ba8;
+}
+
+/* formulario responsive */
+@media screen and (max-width: 600px) {
+    .formulario {
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+/*pagina5refugios*/
+
+
+
+
+
+/*footer*/
+
+footer{
+    padding-top: 15px;
+    background-color: #161616; 
+    border-top: 2px solid #8a8383;
+    width: 99%;
+    height: 150px;
+    color:  whitesmoke;
+    font-weight: bold;
+}
+  
+.logoPequeño{
+    width: 7%;
+    padding-left: 1%;
+    padding-top: 5px;
+    text-align: left;
+}
+  
+.redesSociales{
+    line-height: 2;
+    font-size: large;
+    float: left;
+    padding-right: 2%;
+    width: 200px;
+    height: 50px;
+    display: inline;
+    color: whitesmoke;
+}
+  
+footer a:hover{
+    text-decoration: underline;
+}
+
+.colorLetraBlanca{
+    color: whitesmoke;
+}
+  
+.imagenesRedes{
+    width: 20%;
+    height: 60%;
+    float: right;
+    line-height: 2;
+}
+  
+.infoDeContacto{
+    line-height: 2;
+    font-size: large;
+    float: right;
+    padding-right: 25%;
+    width: 400px;
+    height: 50px;
+    display: inline;
+    text-align: left;
+}
+
+
+@media (min-width: 425px){
+    nav.navega a{
+        display: block;
+        font-size: 15px;
+        line-height: 20px;
+        background-color: rgb(233, 225, 241); 
+    }
+
+    .logoHeader{
+        width: 28%;
+        padding-bottom: 1px;
+    }
+
+    .centrarImagen{
+        padding-top: 80px;
+    }
+    
+    .parallax2{
+        width: 100%;
+    }
+
+    .flexSection{
+        display: inline-block;
+    }
+
+    .gridBeneficios{
+        display: block;
+    }
+    
+    .tamanoImagenTestimonios{
+        width: 100%;
+        height: 280px;
+    }
+
+    #ajusteVideo{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        }
+    
+    .centrarVideo{
+        padding-top: 40px;
+        width: 99%;
+        display: grid;
+        justify-content: center;
+    }
+    
+    
+    .logoHeader{
+        width: 25%;
+    }
+    
+    p{ 
+        padding-right: 3%;
+        line-height: 1.5;
+        font-size: 15px;
+    }
+    
+    .listaCircle{
+        line-height: 1.5;
+        padding-left: 4%;
+        padding-right: 3%;
+        font-size: 15px;
+    }
+    
+
+    footer{
+        width: 99%;
+        height: 400px; 
+    }
+
+    .gridFooter{
+        display: grid;
+        grid-template-rows: 1fr 3fr 3fr; 
+    }
+
+    .logoPequeño{        
+        padding-left: 5px;
+        width: 22%;
+    }
+
+    .redesSociales{
+        padding-left: 5px;
+        line-height: 2;
+        padding-bottom: 50px;
+    }
+
+    .infoDeContacto{
+        padding-left: 5px;
+        float: left;
+    }
+}
+
+
+@media (min-width: 768px){  
+    .logoHeader{
+        width: 25%;
+        padding-bottom: 1px;
+    }
+
+    .centrarImagen{
+        padding-top: 80px;
+    }
+      
+    .flexSection{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2%;
+    }
+
+    .centrarVideo{
+        padding-top: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .gridBeneficios{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 25px;
+        text-align: justify;
+        padding-right: 2%;
+    }
+
+    p{
+        line-height: 1.5;
+        font-size: 15px;
+        padding-right: 2%;
+    }
+    
+    .listaCircle{
+        line-height: 1.5;
+        padding-left: 2%;
+        font-size: 15px;
+    }
+    
+    .tamanoImagenTestimonios{
+        width: 100%;
+        height: 200px;
+    }
+
+    .infoDeContacto{
+        padding-right: 20%;
+        padding-left: 10%;         
+        width: 200px;    
+    }
+
+    .gridFooter{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 25px;
+        text-align: justify;
+    }
+
+    footer{
+        width: 99%;
+        height: 200px;
+    }
+
+    .logoPequeño{
+        width: 75%;
+        padding-top: 2px;
+        float: left;  
+    }
+
+
+    .gridBienestar{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2%;
+        grid-template-rows: none;   
+    }
+
+    .gridBienestar li{
+        margin-left: 10%;
+    }
+}
+
+@media (min-width:1024px){
+    nav.navega a{
+        display: inline;
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .logoHeader{
+        width: 20%;
+        padding-bottom: 1px;
+    }
+
+    .tamanoImagenTestimonios{
+        width: 99%;
+        height: 320px;
+    }
+
+    .logoPequeño{
+        width: 55%;
+        padding-top: 2px;
+        float: left;  
+    }
+    
+    #navegacion a{
+        display: inline;
+        padding-right: 2%;
+        font-size: 130%;
+    
+    }
+
+    #nombre-proyecto{
+        font-size: 150%;    
+    }
+
+    #titulopagina2{
+        font-size: 200%;
+    }
+
+    .gridBienestar{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2%;
+        grid-template-rows: none;
+    }
+
+    .gridBienestar li{
+        margin-left: 10%;
+    }
+
+    .gridBienestar h2{
+        font-size: 120%;
+        margin-top: 5%;
+        text-align: center;
+    }
+}
