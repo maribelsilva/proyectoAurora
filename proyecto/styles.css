@@ -229,13 +229,13 @@ a{
     color: aliceblue;
     font-family: 'Lato', sans-serif;
     text-align: center;
-    background-color: #5accc6;
+    background-color: #c2cc5a;
 }
 
 .plegal {
     margin-top: 0%;
     text-align: justify;
-    color: #414040;
+    color: #fff;
     line-height: 1.6;
     font-size: 18px;
     padding: 10px;
@@ -289,7 +289,7 @@ a{
 .cajalegal {
     width: 90%; /*ancho del elemento*/
     border-radius: 10px; /* Bordes redondeados del div */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra del div */
+    box-shadow: 0 4px 6px #fff; /* Sombra del div */
     flex: 1;  /* Ajusta el tamaño de las columnas de manera equitativa */
     border: 5px solid #5accc6;
     margin: 5px; /* Separación entre las columnas */
@@ -324,7 +324,7 @@ a{
     box-sizing: border-box;
 }
 .botonLegal{
-    background-color: #3c434b;
+    background-color: #fff;
     color:#fff;
     border: none;
     padding: 10px 20px;
@@ -344,7 +344,7 @@ a{
 
 /* Estilos para el botón */
 .botonLegal {
-    background-color: #3c434b;
+    background-color: #fff;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -396,7 +396,7 @@ a{
 }
 
 .cuadroResaltado {
-    background-color: #3c434b;
+    background-color: #fff;
     color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -411,7 +411,7 @@ a{
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -420,7 +420,7 @@ a{
 h1 .formLegal {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #333;
+    color: #fff;
     text-align: center;
 }
 
@@ -449,7 +449,7 @@ textarea {
 
 /*  botón de enviar */
 input[type="submit"] {
-    background-color: #3c434b;
+    background-color: #fff;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -459,7 +459,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #005ba8;
+    background-color: #fff;
 }
 
 /* formulario responsive */
