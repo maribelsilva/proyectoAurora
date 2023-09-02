@@ -754,10 +754,11 @@ footer a:hover{
 
     footer{
         width: 99%;
+        height: 200px;
     }
 
     .logoPequeño{
-        width: 70%;
+        width: 75%;
         padding-top: 2px;
         float: left;  
     }
