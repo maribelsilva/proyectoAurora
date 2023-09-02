@@ -505,27 +505,27 @@ iframe{
     text-align: left;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px){  
     #refugios{
-       display: flex;
-       flex-wrap: wrap;
-       }
-
-       .informacionRefugios{
+        flex-wrap: wrap;
+        }
+    
+        .informacionRefugios{
         flex-basis: 50%;
         margin-top: 6%;
         margin-bottom: 12%;
-       }
-
-       .mapa{
+        }
+    
+        .mapa{
         width: 100%;
         height: 100%;
         object-fit: contain;
-    }
-        .pdonaciones{
-            text-align: left;
         }
-}
+
+        .pdonaciones{
+                text-align: left;
+        }
+    }   
 
     @media (min-width: 1024px){
         #refugios{
