@@ -672,23 +672,28 @@ footer a:hover{
 
     footer{
         width: 99%;
-        height: 200px;   
+        height: 400px;   
     }
-    
-    
-    .logoPequeño{
-        width: 15%;
-        padding-top: 2px;
-        float: left;  
-    }
-    
-    .infoDeContacto{
-        padding-left: 5px;
-        float: left;  
+     
+    .gridFooter{
+        display: grid;
+        grid-template-rows: 1fr 3fr 3fr; 
     }
 
-    .footerBienestar{
-        width: 100%;
+    .logoPequeño{        
+        padding-left: 5px;
+        width: 22%;
+    }
+
+    .redesSociales{
+        padding-left: 5px;
+        line-height: 2;
+        padding-bottom: 50px;
+    }
+
+    .infoDeContacto{
+        padding-left: 5px;
+        float: left;
     }
 }
 
