@@ -477,6 +477,7 @@ input[type="submit"]:hover {
 
 #titulosRefugios{
     text-align: center;
+    padding-top: 10%;
 }
 
 #titulosH2{
@@ -608,6 +609,7 @@ footer a:hover{
     .logoHeader{
         width: 28%;
         padding-bottom: 1px;
+        
     }
 
     .centrarImagen{
@@ -696,6 +698,7 @@ footer a:hover{
     .logoHeader{
         width: 25%;
         padding-bottom: 1px;
+        
     }
 
     .centrarImagen{
