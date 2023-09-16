@@ -246,6 +246,7 @@ a{
 .legal{
     display: flex;
     flex-wrap: wrap;
+    padding-top: 20px;
 }
 
 .in-flex{
