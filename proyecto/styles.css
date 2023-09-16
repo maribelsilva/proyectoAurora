@@ -382,9 +382,10 @@ a{
 }
 
 .lilegal {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.4;
     list-style:inside;
+    color: #414040;
 }
 
 /* Estilos para el cuadro resaltado */
