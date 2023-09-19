@@ -478,7 +478,8 @@ input[type="submit"]:hover {
 
 #titulosRefugios{
     text-align: center;
-    padding-top: 10%;
+    padding-top: 7%;
+    
 }
 
 #titulosH2{
@@ -505,16 +506,23 @@ iframe{
 
 .pdonaciones{
     text-align: left;
+    margin-left: 3%;
+}
+
+.list-group{
+    margin-left: 5%;
+
 }
 
 @media (min-width: 768px){  
-    #refugios{
+    .container{
+        display: flex;
         flex-wrap: wrap;
         }
     
         .informacionRefugios{
         flex-basis: 50%;
-        margin-top: 6%;
+        margin-top: 2%;
         margin-bottom: 12%;
         }
     
@@ -540,6 +548,12 @@ iframe{
             height: 100%;
             object-fit: contain;
         }
+
+        #titulosRefugios{
+            padding-top: 2%;
+        }
+
+       
     }
 
 /*footer*/
