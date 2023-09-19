@@ -230,13 +230,13 @@ a{
     color: aliceblue;
     font-family: 'Lato', sans-serif;
     text-align: center;
-    background-color: #c2cc5a;
+    background-color: #5accc6;
 }
 
 .plegal {
     margin-top: 0%;
     text-align: justify;
-    color: #fff;
+    color: #414040;
     line-height: 1.6;
     font-size: 18px;
     padding: 10px;
@@ -246,6 +246,7 @@ a{
 .legal{
     display: flex;
     flex-wrap: wrap;
+    padding-top: 20px;
 }
 
 .in-flex{
@@ -382,9 +383,10 @@ a{
 }
 
 .lilegal {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.4;
     list-style:inside;
+    color: #414040;
 }
 
 /* Estilos para el cuadro resaltado */
