@@ -516,6 +516,14 @@ iframe{
 
 }
 
+#imagenDonacion{
+    width: 100%;
+}
+
+#imagenRefugios{
+    width: 100%;
+}
+
 @media (min-width: 768px){  
     .container{
         display: flex;
@@ -535,7 +543,14 @@ iframe{
         }
 
         .pdonaciones{
-                text-align: left;
+            text-align: left;
+        }
+
+        #imagenDonacion{
+            margin-top: 5%;
+            width: 100%;
+            height: 300px;
+
         }
     }   
 
@@ -553,6 +568,12 @@ iframe{
 
         #titulosRefugios{
             padding-top: 2%;
+        }
+
+        #imagenDonacion{
+            width: 100%;
+            margin-top: 2%;
+            height: 500px;
         }
 
        
