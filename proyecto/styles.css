@@ -157,6 +157,29 @@ a{
     text-align: center;
 }
 
+.enAdopcion{
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    max-width: 300px;
+}
+
+.botonAdoptar{
+    background-color: #51ade2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.gridAdoptar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+
+
 /*pagina3BienestarAnimal*/
 
 #pagina3{
