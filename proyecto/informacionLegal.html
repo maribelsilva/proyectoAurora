@@ -189,7 +189,7 @@
         <section class="formulario">
             <h1 class="formLegal">Contactanos</h1>
     
-                <form>
+                <form name="registro">
                     <label for="name">Nombre</label>
                     <input id="name" type="text" required>
                     <p id="mensajeNombre"></p>
@@ -198,10 +198,11 @@
                     <label for="pass">Contraseña</label>
                     <input id="pass" type="password" required>
                     <p id="mensajePass"></p>
+                    <p id="mensajePass2"></p>
                     <label for="repeatPass">Repetir contraseña</label>
                     <input id="repeatPass" type="password" required>
                     <p id="mensajeRepeatPass"></p>
-                    <button id="boton" disabled>Registrarme</button>
+                    <button id="boton" type="submit" onclick="validarPassword(document.registro.password)">Registrarme</button>
                     <a href="#">Ya tengo una cuenta. Iniciar sesión</a>
                 </form>
             

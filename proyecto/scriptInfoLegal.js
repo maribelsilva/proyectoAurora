@@ -56,6 +56,22 @@ window.onload = () => {
         }
     })
 
+    function validarPassword(password) {
+        const decimal = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).$/;
+        let mensajeDos;
+        if(password.value.match(decimal)) {
+             
+              mensajeDos = "La contraseña es segura!"
+              document.getElementById("mensajePass2").innerText = mensajeDos;
+    
+         } else{
+    
+            document.getElementById("mensajePass2").innerText = "La contraseña debe contener al menos una mayúscula, una minúscula, un caracter especial y un número."
+          }
+    
+         }
+    
+
     //cheque que sean iguales dos campos
     inputRepeatPass.addEventListener("keyup", () => {
         let mensaje;
@@ -115,7 +131,7 @@ window.onload = () => {
   })
   
         
-    //boton deshabilitado si no completo el form
+    //Boton deshabilitado si no completo el formulario
     formulario.addEventListener("change", (event) => {
         event.preventDefault()
         if (inputNombre.value.trim() != "" && inputPass.value.trim() != "" && inputRepeatPass.value.trim() != "") {
@@ -126,9 +142,6 @@ window.onload = () => {
         }
             
     })
-
-
-
 
 
 }
