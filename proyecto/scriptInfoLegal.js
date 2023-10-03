@@ -71,7 +71,7 @@ window.onload = () => {
     
     inputNombre.addEventListener("blur", () => {
       if (inputNombre.value == "") {
-        inputNombre.style.border = "2px solid red"
+        inputNombre.style.border = "2px solid grey"
       } else {
         inputNombre.style.border = "0"
       }
@@ -89,7 +89,7 @@ window.onload = () => {
   
     inputEmail.addEventListener("blur", () => {
       if (inputEmail.value == "") {
-      inputEmail.style.border = "2px solid red"
+      inputEmail.style.border = "2px solid grey"
       } else {
       inputEmail.style.border = "0"
       }
@@ -98,7 +98,7 @@ window.onload = () => {
 
     inputRepeatPass.addEventListener("blur", () => {
       if (inputRepeatPass.value == "") {
-      inputRepeatPass.style.border = "2px solid red"
+      inputRepeatPass.style.border = "2px solid grey"
       } else {
       inputRepeatPass.style.border = "0"
       }
@@ -108,7 +108,7 @@ window.onload = () => {
     
     inputPass.addEventListener("blur", () => {
       if (inputPass.value == "") {
-      inputPass.style.border = "2px solid red"
+      inputPass.style.border = "2px solid grey"
       } else {
       inputPass.style.border = "0"
       }
