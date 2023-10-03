@@ -367,11 +367,13 @@ a{
 }
 
 /* Estilos para el botón */
-.botonLegal {
-    background-color: #fff;
+button{
+    background-color: #3f9691;
     color: #fff;
+    padding-top: 15px;
     border: none;
     padding: 10px 20px;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -439,7 +441,7 @@ a{
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(9, 69, 91, 0.1);
 }
 
 h1 .formLegal {
@@ -459,11 +461,12 @@ label {
 
 input[type="text"],
 input[type="email"],
+input[type="password"],
 textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #739392;
     border-radius: 5px;
     font-size: 16px;
 }
@@ -724,6 +727,10 @@ footer a:hover{
         padding-left: 4%;
         padding-right: 3%;
         font-size: 15px;
+    }
+
+    .cajaMedioLegal{
+        display: block;
     }
 
 

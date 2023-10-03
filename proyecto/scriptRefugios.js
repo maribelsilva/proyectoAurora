@@ -4,3 +4,5 @@ if (edad >= 18 ){
 }else{
     alert("Eres menor de edad, no puedes donar tu aporte")
 }
+
+sessionStorage.setItem("id", "Ingrese su edad")
