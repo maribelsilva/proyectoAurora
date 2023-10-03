@@ -344,11 +344,13 @@ a{
 }
 
 /* Estilos para el botón */
-.botonLegal {
-    background-color: #fff;
+button{
+    background-color: #3f9691;
     color: #fff;
+    padding-top: 15px;
     border: none;
     padding: 10px 20px;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -436,6 +438,7 @@ label {
 
 input[type="text"],
 input[type="email"],
+input[type="password"],
 textarea {
     width: 95%;
     padding: 10px;
