@@ -47,19 +47,19 @@ window.onload = () => {
 
     //mensaje de error si el pass no cumple con ciertos requisitos
     inputPass.addEventListener("keyup", () => {
+
         let mensaje;
         if (inputPass.value.length < 8) {
             mensaje = "La contrasenia tiene que tener al menos 8 caracteres"
             document.getElementById("mensajePass").innerText = mensaje;
+
         } else {
             document.getElementById("mensajePass").innerText = " "
         }
-    })
 
-    function validarPassword(password) {
-        const decimal = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).$/;
+        const decimal = "/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).$/";
         let mensajeDos;
-        if(password.value.match(decimal)) {
+        if(inputPass.value.match(decimal)) {
              
               mensajeDos = "La contraseña es segura!"
               document.getElementById("mensajePass2").innerText = mensajeDos;
@@ -68,9 +68,9 @@ window.onload = () => {
     
             document.getElementById("mensajePass2").innerText = "La contraseña debe contener al menos una mayúscula, una minúscula, un caracter especial y un número."
           }
-    
-         }
-    
+    })
+
+
 
     //cheque que sean iguales dos campos
     inputRepeatPass.addEventListener("keyup", () => {
