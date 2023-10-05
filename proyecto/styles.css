@@ -163,7 +163,7 @@ a{
     margin: 10px;
     max-width: 300px;
     padding-bottom: 5%;
-    margin-top: 50%;
+    
     
     
 }
@@ -184,6 +184,9 @@ a{
     margin-top: 2%;
 }
 
+#formularioAdopciones{
+    display: none;
+}
 
 
 /*pagina3BienestarAnimal*/
