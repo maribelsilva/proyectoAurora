@@ -46,6 +46,7 @@ let paraAdoptarElement = document.getElementById("paraAdoptar");
 for (let i = 0; i < jsonConvertido.length; i++) {
  
     let div = document.createElement("div");
+    div.classList.add("cadaDonacion");
    
     let imagen = document.createElement("img");
     imagen.src = jsonConvertido[i].imagen
