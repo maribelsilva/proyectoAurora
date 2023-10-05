@@ -45,21 +45,21 @@ window.onload = () => {
     let inputRepeatPass = document.getElementById("repeatPass");
     let boton = document.getElementById("boton");
 
-    //mensaje de error si el pass no cumple con ciertos requisitos
+    // Que me largue mensaje error si la contrasenia no cumple los requisitos
     inputPass.addEventListener("keyup", () => {
+
         let mensaje;
         if (inputPass.value.length < 8) {
             mensaje = "La contrasenia tiene que tener al menos 8 caracteres"
             document.getElementById("mensajePass").innerText = mensaje;
+
         } else {
             document.getElementById("mensajePass").innerText = " "
         }
-    })
 
-    function validarPassword(password) {
-        const decimal = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).$/;
+        const decimal = "/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).$/";
         let mensajeDos;
-        if(password.value.match(decimal)) {
+        if(inputPass.value.match(decimal)) {
              
               mensajeDos = "La contraseña es segura!"
               document.getElementById("mensajePass2").innerText = mensajeDos;
@@ -68,11 +68,11 @@ window.onload = () => {
     
             document.getElementById("mensajePass2").innerText = "La contraseña debe contener al menos una mayúscula, una minúscula, un caracter especial y un número."
           }
-    
-         }
-    
+    })
 
-    //cheque que sean iguales dos campos
+
+
+    // Verificar que la contrasenia se coloque igual en los dos campos
     inputRepeatPass.addEventListener("keyup", () => {
         let mensaje;
         if (inputRepeatPass.value != inputPass.value) {
@@ -83,7 +83,7 @@ window.onload = () => {
         }
     })
 
-    //borde rojo al quitar el cursor de un input cuando esta vacio
+    // Coloque en gris el recuadro si el input está vacío, al soltar el mouse
     
     inputNombre.addEventListener("blur", () => {
       if (inputNombre.value == "") {
@@ -91,48 +91,51 @@ window.onload = () => {
       } else {
         inputNombre.style.border = "0"
       }
-  })
-
-  inputNombre.addEventListener("keyup", () => {
-    let mensaje;
-    if (inputNombre.value.length < 4) {
-        mensaje = "El nombre debe contener más de tres letras."
-        document.getElementById("mensajeNombre").innerText = mensaje;
-    } else {
-        document.getElementById("mensajeNombre").innerText = " "
-    }
-})
-  
-    inputEmail.addEventListener("blur", () => {
-      if (inputEmail.value == "") {
-      inputEmail.style.border = "2px solid grey"
-      } else {
-      inputEmail.style.border = "0"
-      }
-  })
-
-
-    inputRepeatPass.addEventListener("blur", () => {
-      if (inputRepeatPass.value == "") {
-      inputRepeatPass.style.border = "2px solid grey"
-      } else {
-      inputRepeatPass.style.border = "0"
-      }
-    
     })
 
-    
-    inputPass.addEventListener("blur", () => {
-      if (inputPass.value == "") {
-      inputPass.style.border = "2px solid grey"
-      } else {
-      inputPass.style.border = "0"
-      }
-  })
+    inputEmail.addEventListener("blur", () => {
+        if (inputEmail.value == "") {
+        inputEmail.style.border = "2px solid grey"
+        } else {
+        inputEmail.style.border = "0"
+        }
+      })
+  
+  
+      inputRepeatPass.addEventListener("blur", () => {
+        if (inputRepeatPass.value == "") {
+        inputRepeatPass.style.border = "2px solid grey"
+        } else {
+        inputRepeatPass.style.border = "0"
+        }
+      
+      })
+  
+      
+      inputPass.addEventListener("blur", () => {
+        if (inputPass.value == "") {
+        inputPass.style.border = "2px solid grey"
+        } else {
+        inputPass.style.border = "0"
+        }
+      })
+
+    // Que verifique condiciones que deben cumplirse en input nombre
+
+     inputNombre.addEventListener("keyup", () => {
+       let mensaje;
+       if (inputNombre.value.length < 4) {
+        mensaje = "El nombre debe contener más de tres letras."
+        document.getElementById("mensajeNombre").innerText = mensaje;
+       } else {
+        document.getElementById("mensajeNombre").innerText = " "
+       }
+    })
   
         
-    //Boton deshabilitado si no completo el formulario
-    formulario.addEventListener("change", (event) => {
+    // Boton deshabilitado si no completo el formulario
+    
+     formulario.addEventListener("change", (event) => {
         event.preventDefault()
         if (inputNombre.value.trim() != "" && inputPass.value.trim() != "" && inputRepeatPass.value.trim() != "") {
             boton.removeAttribute("disabled");
