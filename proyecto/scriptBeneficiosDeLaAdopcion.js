@@ -66,7 +66,7 @@ for (let i = 0; i < jsonConvertido.length; i++) {
    
     let button = document.createElement("button");
     button.innerHTML = "¡Lo quiero Adoptar!";
-    button.click
+    
 
     div.appendChild(imagen);
     div.appendChild(nombre);
@@ -81,8 +81,8 @@ for (let i = 0; i < jsonConvertido.length; i++) {
 })
 
 
-function mostrarFormulario() {
-    var formulario = document.getElementByI(formularioAdopciones);
-    formularioAdopciones.style.display = "block";
-}
+// function mostrarFormulario() {
+//     var formulario = document.getElementByI(formularioAdopciones);
+//     formularioAdopciones.style.display = "block";
+// }
     
