@@ -158,13 +158,11 @@ a{
 }
 
 .cadaAdopcion{
-    border: 2px solid #4b4343;
+    border: 2px solid #51ade2;
     padding: 10px;
     margin: 10px;
-    max-width: 300px;
+    max-width: 320px;
     padding-bottom: 5%;
-    
-    
     
 }
 
@@ -174,8 +172,13 @@ a{
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    
+   
 }
+
+.botonAdoptar:hover{
+    color: black;
+}
+
 
 .gridAdoptar{
     display: grid;
@@ -184,9 +187,9 @@ a{
     margin-top: 2%;
 }
 
-#formularioAdopciones{
+/* #formularioAdopciones{
     display: none;
-}
+} */
 
 
 /*pagina3BienestarAnimal*/
