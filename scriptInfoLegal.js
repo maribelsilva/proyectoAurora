@@ -48,27 +48,33 @@ window.onload = () => {
     // Que me largue mensaje error si la contrasenia no cumple los requisitos
     inputPass.addEventListener("keyup", () => {
 
-        let mensaje;
-        if (inputPass.value.length < 8) {
-            mensaje = "La contrasenia tiene que tener al menos 8 caracteres"
-            document.getElementById("mensajePass").innerText = mensaje;
+     let mensaje;
+      if (inputPass.value.length < 8) {
+          mensaje = "La contrasenia tiene que tener al menos 8 caracteres"
+           document.getElementById("mensajePass").innerText = mensaje;
 
-        } else {
-            document.getElementById("mensajePass").innerText = " "
-        }
+       } else {
+           document.getElementById("mensajePass").innerText = " "
+       }
 
-        const decimal = "/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).$/";
-        let mensajeDos;
-        if(inputPass.value.match(decimal)) {
-             
-              mensajeDos = "La contraseña es segura!"
-              document.getElementById("mensajePass2").innerText = mensajeDos;
-    
-         } else{
-    
-            document.getElementById("mensajePass2").innerText = "La contraseña debe contener al menos una mayúscula, una minúscula, un caracter especial y un número."
-          }
-    })
+     })
+
+     inputPass.addEventListener("keyup", () => {
+      
+       let mensajeDos;
+       const decimal = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,}$/;
+     
+       if (inputPass.value.match(decimal)) {
+           
+             mensajeDos = "La contraseña es segura!"
+             document.getElementById("mensajePass2").innerText = mensajeDos;
+  
+        } else{
+  
+           document.getElementById("mensajePass2").innerText = "La contraseña debe contener al menos una mayúscula, una minúscula, un caracter especial y un número."
+         }
+        })
+  
 
 
 
