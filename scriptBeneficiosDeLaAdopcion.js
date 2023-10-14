@@ -11,30 +11,30 @@ let adopcionJson = `[
     {
         "imagen" : "https://elrefugio.org/contenido/animales/thumbs/El-Refugio-Clausweb.jpg",
         "nombre" : "RAKI",
-        "sexo" : "macho",
+        "sexo" : "Macho",
         "edad" : "2 años",
-        "contacto" : "Noelia"
+        "contacto" : "Tránsito: Noelia"
     },
     {
         "imagen" : "https://elrefugio.org/contenido/animales/thumbs/El-Refugio-Argy.jpg",
         "nombre" : "CANELA",
-        "sexo" : "hembra",
+        "sexo" : "Hembra",
         "edad" : "3 años",
-        "contacto" : "Agustina"
+        "contacto" : "Tránsito: Agustina"
     },
     {
         "imagen" : "https://elrefugio.org/contenido/animales/thumbs/El-Refugio-Macauliweb.jpg",
         "nombre" : "MORENA",
-        "sexo" : "hembra",
+        "sexo" : "Hembra",
         "edad" : "5 meses",
-        "contacto" : "Pablo"
+        "contacto" : "Tránsito: Pablo"
     },
     {
         "imagen" : "https://elrefugio.org/contenido/animales/thumbs/El-Refugio-Mirkoweb.jpg",
         "nombre" : "MIRKO",
-        "sexo" : "macho",
+        "sexo" : "Macho",
         "edad" : "10 meses",
-        "contacto" : "Martin"
+        "contacto" : "Tránsito: Martin"
     }
 ]`
 
@@ -46,7 +46,7 @@ let paraAdoptarElement = document.getElementById("paraAdoptar");
 for (let i = 0; i < jsonConvertido.length; i++) {
  
     let div = document.createElement("div");
-    div.classList.add("cadaDonacion");
+    div.classList.add("cadaAdopcion");
    
     let imagen = document.createElement("img");
     imagen.src = jsonConvertido[i].imagen
@@ -66,7 +66,8 @@ for (let i = 0; i < jsonConvertido.length; i++) {
    
     let button = document.createElement("button");
     button.innerHTML = "¡Lo quiero Adoptar!";
-    button.click
+    button.classList.add("botonAdoptar")
+    
 
     div.appendChild(imagen);
     div.appendChild(nombre);
@@ -80,9 +81,12 @@ for (let i = 0; i < jsonConvertido.length; i++) {
 }
 })
 
+function mostrarFormulario(){
+    var formulario = document.getElementById("formularioAdopciones");
+    formulario.style.display = "block" ;
 
-function mostrarFormulario() {
-    var formulario = document.getElementByI(formularioAdopciones);
-    formularioAdopciones.style.display = "block";
 }
-    
+
+var button = document.getElementById("botonAdoptar");
+button.addEventListener("click", mostrarFormulario);
+
