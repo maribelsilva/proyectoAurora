@@ -154,3 +154,34 @@ window.onload = () => {
 
 
 }
+
+
+// Uso de API REST de nombres y e-mails de usuarios
+
+const url = "https://jsonplaceholder.typicode.com/users";
+const respuestas = document.querySelector("#respuestas")
+
+document.addEventListener("DOMContentLoaded", llamarAPI);
+
+
+  async function llamarAPI(){
+  const respuestas = await fetch (url)
+  const infoUsuarios = await respuestas.json()
+  mostrarHTML(infoUsuarios)
+
+}
+
+
+   function mostrarHTML(datosUsuarios){
+      datosUsuarios.forEach(item => {
+        const row = document.createElement("tr");
+        row.innerHTML = ` 
+        <td>${item.name}</td>
+        <td>${item.email}</td>
+        `    
+        respuestas.appendChild(row)
+
+    });
+  }
+
+     
