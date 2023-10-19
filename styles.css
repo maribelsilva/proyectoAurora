@@ -179,13 +179,15 @@ a{
     color: black;
 }
 
-
-.gridAdoptar{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 5%; 
-    margin-top: 2%;
+@media (min-width: 768px){
+    .gridAdoptar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 5%; 
+        margin-top: 2%;
+    }
 }
+
 
 /* #formularioAdopciones{
     display: none;
