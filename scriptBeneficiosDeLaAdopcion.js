@@ -79,14 +79,45 @@ for (let i = 0; i < jsonConvertido.length; i++) {
     paraAdoptarElement.appendChild(div);
 
 }
-})
 
 function mostrarFormulario(){
     var formulario = document.getElementById("formularioAdopciones");
     formulario.style.display = "block" ;
+    formulario.scrollIntoView({behavior: "smooth"})
+
 
 }
 
-var button = document.getElementById("botonAdoptar");
-button.addEventListener("click", mostrarFormulario);
+var buttons = document.getElementsByClassName("botonAdoptar");
+    
+   
+for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", mostrarFormulario);
+    }
+
+})
+
+document.addEventListener("DOMContentLoaded", function() {
+  const formularioAdopciones = document.getElementById("formularioAdopciones");
+  const confirmarAdopcionButton = document.getElementById("confirmarAdopcion");
+  const mensajeEmergente = document.getElementById("mensajeEmergente");
+  const cerrarMensajeButton = document.getElementById("cerrarMensaje");
+
+
+  confirmarAdopcionButton.addEventListener("click", function(e) {
+    e.preventDefault(); 
+    mensajeEmergente.style.display = "block";
+  });
+
+  
+  cerrarMensajeButton.addEventListener("click", function() {
+    mensajeEmergente.style.display = "none";
+    const formulario = document.getElementById("formularioAdopciones");
+    formulario.reset();
+  });
+});
+
+
+
+  
 

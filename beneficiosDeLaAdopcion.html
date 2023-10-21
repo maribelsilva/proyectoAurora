@@ -75,13 +75,19 @@
    </section>
 
 <div id="formularioAdopciones" style="display: none;">
-   <form>
+   <h2>Completa tus datos</h2>
+   <form id="formAdopcion" >
       <label for="name">Nombre y Apellido</label>
-      <input type="text">
+      <input class="campo" type="text">
       <label for="contacto">Telefono de contacto</label>
-      <input type="text">
-      <button type="submit">CONFIRMAR ADOPCIÓN</button> 
+      <input class="campo" type="text">
+      <button type="submit" id="confirmarAdopcion" >CONFIRMAR ADOPCIÓN</button> 
    </form>
+</div>
+
+<div id="mensajeEmergente" style="display: none;">
+   <p>¡GRACIAS POR TU APORTE! Nos comunicaremos con vos a la brevedad!</p>
+   <button id="cerrarMensaje">Cerrar</button>
 </div>
 
    

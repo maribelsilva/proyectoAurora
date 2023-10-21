@@ -179,6 +179,25 @@ a{
     color: black;
 }
 
+.campo{
+    
+    width: 50px;
+    border: 2PX #161616;
+    
+}
+
+#mensajeEmergente{
+    display: none;
+    border: 2px solid;
+    padding: 2%;
+        
+}
+
+#formularioAdopciones{
+    padding-bottom: 2%;
+}
+
+
 @media (min-width: 768px){
     .gridAdoptar{
         display: grid;
